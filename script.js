@@ -31,7 +31,6 @@ function adicionarAoCarrinho(id) {
 }
 
 function removerItem(index) {
-  const item = carrinho[index];
   carrinho.splice(index, 1);
   atualizarCarrinho();
 }
@@ -47,7 +46,6 @@ function finalizarCompra() {
     return;
   }
 
- 
   mostrarToast("Compra finalizada com sucesso!");
   carrinho.length = 0;
   atualizarCarrinho();
@@ -72,7 +70,6 @@ function atualizarCarrinho() {
   contadorCarrinho.textContent = carrinho.length;
   totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
 }
-
 
 function renderizarPaginacao(totalPaginas) {
   const paginacaoContainer = document.getElementById('paginacao');
@@ -123,7 +120,7 @@ function exibirProdutos() {
       <img src="${produto.imagem}" alt="${produto.nome}">
       <h3>${produto.nome}</h3>
       <p>R$ ${produto.preco.toFixed(2)}</p>
-      <button onclick="adicionarAoCarrinho(${produto.id})">Adicionar</button>
+      <button onclick="adicionarAoCarrinho('${produto.id}')">Adicionar</button>
     `;
     produtosContainer.appendChild(card);
   });
@@ -159,3 +156,9 @@ function mostrarToast(mensagem) {
 }
 
 carregarProdutos();
+
+// Torna a função acessível no escopo global para o HTML
+window.adicionarAoCarrinho = adicionarAoCarrinho;
+window.removerItem = removerItem;
+window.limparCarrinho = limparCarrinho;
+window.finalizarCompra = finalizarCompra;
