@@ -31,14 +31,16 @@ cd Projeto---Tg
 #2. Instale as dependências do JSON Server
 npm install -g json-server
 
-3. Inicie o servidor da API
+3. Inicie o servidor da API (
 json-server --watch dbTeste.json --port 3000
 
 4. Inicie o servidor da loja (com http-server)
+   
 npm install -g http-server
 npm run site
 
-5. Acesse no navegador:
+6. Acesse no navegador:
+   
 Loja: http://localhost:5500
 
 API: http://localhost:3000/produtos
