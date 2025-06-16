@@ -39,6 +39,7 @@ npm install -g http-server
 npm run site
 
 5. Acesse no navegador:
+   
 Loja: http://localhost:5500
 
 API: http://localhost:3000/produtos
