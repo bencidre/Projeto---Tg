@@ -1,0 +1,12 @@
+{
+  "produtos": [
+    { "id": 1, "nome": "Camiseta", "preco": 59.9, "imagem": "/assets/superman.jpeg" },
+    { "id": 2, "nome": "Calça Jeans", "preco": 129.9, "imagem": "/assets/calcajeans.webp" },
+    { "id": 3, "nome": "Tênis Esportivo", "preco": 299.9, "imagem": "/assets/tenis.webp" },
+    { "id": 4, "nome": "Jaqueta", "preco": 199.9, "imagem": "/assets/jaqueta.webp" },
+    { "id": 5, "nome": "Boné", "preco": 39.9, "imagem": "/assets/bone.webp" },
+    { "id": 6, "nome": "Meias", "preco": 19.9, "imagem": "/assets/meias.webp" },
+    { "id": 7, "nome": "Relógio", "preco": 499.9, "imagem": "/assets/relogio.webp" },
+    { "id": 8, "nome": "Óculos", "preco": 229.9, "imagem": "/assets/oculos.webp" }
+  ]
+}

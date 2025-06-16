@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">🛍️ Loja Tgid</div>
+      <div class="carrinho-icon" id="carrinhoToggle">
+        🛒 <span id="contador-carrinho">0</span>
+      </div>
+    </div>
+    <div class="carrinho" id="carrinho">
+      <ul id="lista-carrinho"></ul>
+      <p id="total-carrinho">Total: R$ 0,00</p>
+      <div class="botoes-carrinho">
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="banner">
+      <img src="/assets/Design sem nome.png" alt="Banner Promoção" />
+    </section>
+
+    <section id="produtos" class="produtos"></section>
+
+    <div id="paginacao" style="text-align: center; margin-top: 20px;"></div>
+    <div id="toast-container"></div>
+  </main>
+
+  <footer>
+    <p>Criador por Anderson Cidre</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

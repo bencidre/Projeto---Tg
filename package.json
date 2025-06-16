@@ -1,0 +1,9 @@
+{
+  "name": "loja-online",
+  "version": "1.0.0",
+  "description": "Loja online simples com API simulada e frontend JS puro",
+  "scripts": {
+    "server": "json-server --watch dbTeste.json --port 3000",
+    "site": "npx http-server -p 5500"
+  }
+}
